@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Video, Phone, MessageSquare, Calendar, Clock, User, Mic, MicOff, VideoOff, Settings, Users, Share, SwordIcon as Record } from 'lucide-react';
 

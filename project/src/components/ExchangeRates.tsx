@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, TrendingDown, RefreshCw } from 'lucide-react';
 
@@ -47,7 +47,7 @@ const exchangeRates = [
 ];
 
 export const ExchangeRates: React.FC = () => {
-  const [lastUpdate, setLastUpdate] = React.useState(new Date());
+  const [lastUpdate, setLastUpdate] = useState(new Date());
 
   const handleRefresh = () => {
     setLastUpdate(new Date());

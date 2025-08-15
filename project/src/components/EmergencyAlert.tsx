@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   AlertTriangle, 
@@ -34,7 +34,7 @@ export const EmergencyAlert: React.FC<EmergencyAlertProps> = ({ onClose }) => {
   const [message, setMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Simulate getting location
     setTimeout(() => {
       setLocation('123 Main St, City, State 12345');

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, TrendingDown, Eye, EyeOff } from 'lucide-react';
 
@@ -10,7 +10,7 @@ const currencies = [
 ];
 
 export const WalletOverview: React.FC = () => {
-  const [showBalances, setShowBalances] = React.useState(true);
+  const [showBalances, setShowBalances] = useState(true);
 
   return (
     <div className="space-y-6">
